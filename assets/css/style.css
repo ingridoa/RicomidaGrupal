@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lobster&display=swap");
+
+
+.navbar-brand {
+  font-family: Lobster, Cabin;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+}
+
+.titulo-ricomida a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Lobster, Cabin;
+  font-size: 2.5rem;
+}
+
+.navbar-nav{
+  color: #FFFFFF;
+}
+
+.color-grey{
+  color: #373A3C;
+}
+
+/* SE USARA MEDIAQUERY PARA HACER QUE EL MENU DE HAMBURGUESA NO SEA VISIBLE Y SE MUESTRE EL OTRO MENU A CONTINUACIÓN -REVISAR COMPORTAMIENTO- */
+/* PARA SEA VISIBLE EL MENU DE HAMBURGUESA Y NO SE VEA EL MENU DE LA PANTALLA GRANDE*/
+.second-navbar {
+  display: none;
+}
+
+.tipo-de-letra {
+  font-family: Cabin;
+  font-size: 1.1 rem;
+  color: #373a3c;
+}
+
+/*MOSTRAR EL SEGUNDO CONJUNTO DE ELEMENTOS DE NAVEGACION EN PANTALLAS MD EN ADELANTE */
+@media (min-width: 768px) {
+  .second-navbar {
+    display: block;
+  }
+}
+
+.custom-bg-nav {
+  background-color: #373a3c;
+}
+
+.custom-button {
+  font-size: 0.8rem;
+}
+
+.custom-line-height {
+  line-height: 2rem;
+  padding-right: 3rem;
+}
+
+.custom-line-height-1 {
+  line-height: 2rem;
+}
+
+.custom-card {
+  background-color: #dc3545;
+  color: #ffffff;
+  border-color: #dc3545;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+/* SE USO PARA CAMBIARLE EL ESTILO DE LETRA A RICOMIDA POR LOBSTER */
+.custom-ricomida {
+  font-family: Lobster;
+}
+
+/* ESTILOS QUE SOBRESCRIBI PARA HACER QUE LOS BOTONES DEL SLIDE FUERAN CIRCULOS Y NO LINEAS */
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #373A3C;
+  position: relative;
+  top: 50px;
+}
+ /* ESTILOS APLICADOS A --PREPARACION -- E --INGREDIENTE-- PARA QUE TUVIERAN UN SUBRAYADO Y PUDIERA SEPARARLO UN POCO DE LOS TITULOS YA MENCIONADOS */
+.bordes {
+  border-bottom: 1px solid;
+  width: 50%;
+}
+
+footer {
+  background-color: #373a3c;
+  font-family: Lobster;
+  font-size: 2.5rem;
+}
